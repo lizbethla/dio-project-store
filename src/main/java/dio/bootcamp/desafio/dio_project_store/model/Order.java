@@ -11,6 +11,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.OrderColumn;
 
 @Entity(name = "tb_order")
 public class Order {
@@ -22,6 +23,7 @@ public class Order {
     @OneToOne(cascade = CascadeType.ALL)
     private Customer customer;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OrderColumn(name = "quantity")
     private List<Product> productos;
     
     public Long getId() {
