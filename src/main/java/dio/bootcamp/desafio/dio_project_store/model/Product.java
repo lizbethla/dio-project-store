@@ -20,7 +20,7 @@ public class Product {
     @Column(length = 100, nullable = false)
     private String name;
     @Column(nullable= false, precision=7, scale=2) 
-    private BigDecimal precio;
+    private BigDecimal price;
     @OneToOne(cascade = CascadeType.ALL)
     private Category category;
 
