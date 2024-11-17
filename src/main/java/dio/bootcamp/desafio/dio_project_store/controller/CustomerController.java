@@ -16,9 +16,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import dio.bootcamp.desafio.dio_project_store.model.Customer;
 import dio.bootcamp.desafio.dio_project_store.service.CustomerService;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 @RestController
 @RequestMapping("/customers")
