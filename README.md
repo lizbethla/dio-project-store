@@ -24,7 +24,7 @@ classDiagram
   class Order {
     -Number orderId
     -Customer customer
-    -Product[] Products
+    -Product[] products
   }
 
 
