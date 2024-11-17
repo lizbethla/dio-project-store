@@ -12,7 +12,7 @@ classDiagram
   class Product {
     -Number productId
     -String name
-    -Number precio
+    -Number price
     -Category category
   }
 
